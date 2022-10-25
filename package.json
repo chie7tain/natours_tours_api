@@ -1,0 +1,11 @@
+{
+  "name": "natours_api",
+  "version": "1.0.0",
+  "description": "learning node, express and mongoDB",
+  "main": "app.js",
+  "author": "chie7tain",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4"
+  }
+}
