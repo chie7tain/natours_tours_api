@@ -8,6 +8,10 @@ const tours = JSON.parse(
 
 const PORT = process.env.PORT || 3000;
 
+app.use((req, res, next) => {
+  console.log('Hello from the middleware');
+  next();
+});
 const getAllTours = (req, res) => {
   (req, res) => {
     res.status(200).json({
