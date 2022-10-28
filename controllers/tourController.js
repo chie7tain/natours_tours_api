@@ -15,7 +15,6 @@ exports.checkID = (req, res, next, val) => {
 };
 
 exports.checkNameandPrice = (req, res, next) => {
-  console.log(req.body);
   if (req.body.name === undefined || req.body.price === undefined) {
     return res.status(400).json({
       status: 'fail',
