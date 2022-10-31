@@ -52,7 +52,9 @@ exports.getTour = (req, res) => {
 };
 exports.createTour = (req, res) => {
   const newId = tours[tours.length - 1].id + 1;
-  const newTour = { id: newId, ...req.body };
+
+  // eslint-disable-next-line prefer-object-spread
+  const newTour = Object.assign({ id: newId }, req.body);
   tours.push(newTour);
   fs.writeFile(
     `${__dirname}/dev-data/data/tours-simple.json`,
