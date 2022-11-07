@@ -25,5 +25,8 @@
     "eslint-plugin-react": "^7.31.10",
     "morgan": "^1.10.0",
     "prettier": "^2.7.1"
+  },
+  "engines": {
+    "node": ">=12.0.0"
   }
 }
