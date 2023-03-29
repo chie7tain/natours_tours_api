@@ -2,6 +2,7 @@ const express = require('express');
 
 const app = express();
 
+// eslint-disable-next-line import/no-extraneous-dependencies, node/no-unpublished-require
 const morgan = require('morgan'); // 3rd party middleware
 
 const tourRouter = require('./routes/tourRoutes');
